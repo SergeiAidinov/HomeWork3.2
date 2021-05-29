@@ -2,10 +2,20 @@ package ru.yandex.incoming34;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("product")
 public class Product {
     private int id;
     private String description;
+
+    public Product(int id, String description, int price) {
+        this.id = id;
+        this.description = description;
+        this.price = price;
+    }
+
+    public Product() {
+
+    }
 
     public int getId() {
         return id;
