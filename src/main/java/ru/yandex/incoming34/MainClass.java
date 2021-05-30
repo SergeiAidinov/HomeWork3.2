@@ -38,7 +38,7 @@ public class MainClass {
         productRepository.showProducts();
         Cart cart1 = context.getBean("cart", Cart.class);
         cart1.procedure();
-       // Cart cart2 = context.getBean("cart", Cart.class);
+
 
     }
 }
